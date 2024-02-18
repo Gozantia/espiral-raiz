@@ -10,7 +10,9 @@ function App() {
           Hola! Somos Espiral Raiz
         </p>
       </header>
+    <img src='https://www.gozantia.online/static/media/image.b009ec41.png' loading='lazy'/>
     </div>
+    
   );
 }
 
