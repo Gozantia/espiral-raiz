@@ -1,5 +1,4 @@
 import React from 'react';
-import logoEspiral from './logo.png';
 import './App.css';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import NavBar from './components/navBar';

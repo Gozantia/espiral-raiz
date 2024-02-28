@@ -13,6 +13,10 @@ h1, h2, h3,h4 {
   font-weight: 400;
   font-style: normal;
 }
+h1 {
+
+  font-size: 4rem;
+}
 .video-container{
   width: 100vw;
   height: 100vh;
@@ -48,6 +52,7 @@ iframe.hero-video {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 4;
+    text-align: center;
   }
 
   .wrapper-video {
@@ -67,4 +72,26 @@ iframe.hero-video {
   background: #4cff027d;
   z-index: 3;
 }
-
+.nav {
+  position: absolute;
+  z-index: 10;
+  justify-content: center;
+  width: 100%;
+}
+.nav, .links {
+  display: flex;
+  justify-content: center;
+}
+.links { 
+  gap: 20px;
+  align-self: center;
+  padding: 20px;
+  border-radius: 50px;
+  background: #fff;
+}
+.links a {
+  text-decoration: none;
+}
+.nav img.logo {
+  height: 200px;
+}

@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-
+import logoEspiral from '../logo.png';
 const NavBar = () => {
     return ( 
         <div className="nav">
 <div className="logo"> 
-<Link to="/"> Espiral </Link>
+<Link to="/">
+    <img src={logoEspiral} className="logo"loading='lazy' alt='Espiral Raiz Danza Experimental'/>
+ </Link>
 </div>
 <div className="links">
     <div className="nav-item">
