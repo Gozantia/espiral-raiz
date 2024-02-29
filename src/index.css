@@ -47,12 +47,12 @@ iframe.hero-video {
   }
   .hero-text {
     position: absolute;
-    color: #FFFFFF;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    color: #ffffffeb;
+    left: 10%;
+    top: 40%;
     z-index: 4;
-    text-align: center;
+    max-width: 655px;
+    text-shadow: 2px 4px 9px #0000008a;
   }
 
   .wrapper-video {
@@ -69,25 +69,24 @@ iframe.hero-video {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100vh;
-  background: #4cff027d;
-  z-index: 3;
+  background: rgb(221 174 238 / 18%);
+  background: radial-gradient(circle, rgb(221 174 238 / 30%) 0%, rgb(2 6 0 / 67%) 100%); z-index: 3;
 }
 .nav {
   position: absolute;
   z-index: 10;
-  justify-content: center;
   width: 100%;
 }
 .nav, .links {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 .links { 
   gap: 20px;
   align-self: center;
   padding: 20px;
   border-radius: 50px;
-  background: #fff;
+  background: #ffffffbe;
 }
 .links a {
   text-decoration: none;
