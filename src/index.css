@@ -53,12 +53,36 @@ iframe.hero-video {
     position: absolute;
     color: #ffffffeb;
     left: 10%;
-    top: 40%;
+    bottom: 5%;
     z-index: 4;
-    max-width: 655px;
+    max-width: 85%;
     text-shadow: 2px 4px 9px #0000008a;
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
+@media (max-width: 920px){
 
+  .hero-text {
+    flex-direction: column;
+  }
+  .hero-text h2 {
+    font-size: 16px;
+  }
+}
+.button.button-primary {
+  text-decoration: none;
+  background: #d33a05;
+  color: #ffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.button.button-primary:hover {
+  background: #fff;
+  color: #d33a05;
+}
   .wrapper-video {
     overflow: hidden;
     max-width: 100%;
@@ -76,28 +100,7 @@ iframe.hero-video {
   background: rgb(221 174 238 / 18%);
   background: radial-gradient(circle, rgb(221 174 238 / 30%) 0%, rgb(2 6 0 / 67%) 100%); z-index: 3;
 }
-.nav {
-  position: absolute;
-  z-index: 10;
-  width: 100%;
-}
-.nav, .links {
-  display: flex;
-  justify-content: space-around;
-}
-.links { 
-  gap: 20px;
-  align-self: center;
-  padding: 20px;
-  border-radius: 50px;
-  background: #ffffffbe;
-}
-.links a {
-  text-decoration: none;
-}
-.nav img.logo {
-  height: 200px;
-}
+
 
 .slide-in {
   position:fixed;
@@ -123,4 +126,34 @@ iframe.hero-video {
   background: #fff;
   height: 100vh;
   width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: #fff;
+  border: 1px solid #0000008f;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0px;
 }
