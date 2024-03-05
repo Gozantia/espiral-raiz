@@ -7,6 +7,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(221 174 238 / 18%);
+  background: radial-gradient(circle, rgb(221 174 238 / 30%) 0%, rgb(2 6 0 / 67%) 100%); z-index: 3;
+  margin:0;
 }
 h1, h2, h3,h4 {
   font-family: "Righteous", sans-serif;
@@ -16,6 +19,7 @@ h1, h2, h3,h4 {
 h1 {
 
   font-size: 4rem;
+  margin: 0;
 }
 .video-container{
   width: 100vw;
@@ -93,4 +97,30 @@ iframe.hero-video {
 }
 .nav img.logo {
   height: 200px;
+}
+
+.slide-in {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100vh;
+  background: #0f0f0f;
+  transform-origin: bottom;
+}
+.slide-out {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100vh;
+  background: #0f0f0f;
+  transform-origin: top;
+}
+
+.main-section {
+  position: absolute;
+  background: #fff;
+  height: 100vh;
+  width: 100%;
 }
