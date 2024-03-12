@@ -1,5 +1,5 @@
 header {
-    position: absolute;
+    position: fixed;
     z-index: 10;
     width: 100%;
     display: flex;
@@ -91,12 +91,12 @@ header {
 .burger-menu .menu-options {
     background-color: #dc3901ed;
     position: absolute;
-    width: 0;
-    top: 90px;
-    left: 0;
+    width: 27%;
+    top: 0;
     padding: 0;
     opacity: 0;
     transition: 0.3s;
+    right: 36.5%;
 }
 .burger-menu .menu-options li {
     color: #fff;
@@ -118,15 +118,10 @@ header {
 .burger-menu .menu-options li.search {
     margin-bottom: 1em;
 }
-.burger-menu .menu-options li.search .search-box {
-    width: 300px;
-    height: 35px;
-    font-size: 1em;
-    color: #299309;
-    padding: 0 15px;
-    font-weight: lighter;
-}
+
 .burger-menu .menu-check:checked ~ .menu-options {
-    width: 100%;
+    width: 27%;
     opacity: 1;
+    top: 104px;
+    right: 36.5%;
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import transition from '../transition';
 const Portafolio = () => {
     return (  
         <main className='main-section portfolio'>
@@ -8,4 +7,4 @@ const Portafolio = () => {
         );
 }
  
-export default transition(Portafolio);
+export default Portafolio;

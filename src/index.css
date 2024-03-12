@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -15,6 +14,7 @@ h1, h2, h3,h4 {
   font-family: "Righteous", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #fff;
 }
 h1 {
 
@@ -121,12 +121,6 @@ iframe.hero-video {
   transform-origin: top;
 }
 
-.main-section {
-  position: absolute;
-  background: #fff;
-  height: 100vh;
-  width: 100%;
-}
 
 .swiper {
   width: 100%;
@@ -156,4 +150,101 @@ iframe.hero-video {
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 0px;
+}
+.grid-obras {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.item-grid {
+  min-height: 340px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  min-height: 340px;
+  align-items: end;
+  padding: 20px;
+  transition: 0.7s;
+ -webkit-box-shadow: 1px 3px 24px -13px rgba(66, 68, 90, 1);
+-moz-box-shadow: 1px 3px 24px -13px rgba(66, 68, 90, 1);
+box-shadow: 1px 3px 24px -13px rgba(66, 68, 90, 1);
+}
+.item-grid:hover {
+  transform: scale(1.5) translate(-14px, 0);
+}
+
+.grid-obras h3 {
+  color: #fff;
+}
+
+.item-grid-container {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 1px 3px 8px 1px rgba(66, 68, 90, 1);
+  border-radius: 5px;
+} 
+
+.item-grid-container h3 {
+  position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
+
+.item-grid.entre-mezclas {
+  background-image:
+  linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 75%,  rgba(1, 13, 24, 99) 95%), url(./grid-images/entremezclas.jpg);
+}
+
+.item-grid.entre-mezclas:hover {
+  background-image:
+  linear-gradient(180deg, rgba(255, 255, 255, 0),
+  rgba(1, 13, 24, 0.5) 90.71%), url(./grid-images/entremezclas.jpg);
+}
+
+.item-grid.gargola {
+  background-image:
+  linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 75%,  rgba(1, 13, 24, 99) 95%), url(./grid-images/gargola.jpg);
+}
+.item-grid.gargola:hover {
+  background-image:
+  linear-gradient(180deg, rgba(255, 255, 255, 0),
+  rgba(1, 13, 24, 0.5) 90.71%), url(./grid-images/gargola.jpg);
+}
+
+.item-grid.habitantes {
+  background-image:
+  linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 75%,  rgba(1, 13, 24, 99) 95%), url(./grid-images/habitantes.jpg);
+}
+.item-grid.habitantes:hover {
+  background-image:
+  linear-gradient(180deg, rgba(255, 255, 255, 0),
+  rgba(1, 13, 24, 0.5) 90.71%), url(./grid-images/habitantes.jpg);
+}
+.item-grid.memorias {
+  background-image:
+  linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 75%,  rgba(1, 13, 24, 99) 95%), url(./grid-images/memorias.jpg);
+}
+
+.item-grid.memorias:hover {
+  background-image:
+  linear-gradient(180deg, rgba(255, 255, 255, 0),
+  rgba(1, 13, 24, 0.5) 90.71%), url(./grid-images/memorias.jpg);
+}
+
+.item-grid.amoradanza {
+  background-image:
+  linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 75%,  rgba(1, 13, 24, 99) 95%), url(./grid-images/amoradanza.jpeg);
+}
+.item-grid.amoradanza:hover {
+  background-image:
+  linear-gradient(180deg, rgba(255, 255, 255, 0),
+  rgba(1, 13, 24, 0.5) 90.71%), url(./grid-images/amoradanza.jpeg);
+}
+
+
+.grid-container {
+  max-width: 1300px;
+  margin: auto;
+  padding:64px 20px;
 }

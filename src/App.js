@@ -7,7 +7,7 @@ import Acerca from './components/Acerca';
 import Servicios from './components/servicios';
 import Contacto from './components/contacto';
 import Portafolio from './components/portafolio';
-//import { AnimatePresence } from 'framer-motion/dist/framer-motion';
+import Gargola from './components/obras/gargola';
 function App() {
   const location = useLocation();
   return (
@@ -18,6 +18,7 @@ function App() {
       <Route index element={<Home />} />
       <Route path="/conocenos" element={<Acerca/>} />
       <Route path="/exploranos" element={<Portafolio/>} />
+      <Route path='/exploranos/gargola' element={<Gargola/>}/>
       <Route path="/aliemonos" element={<Servicios/>} />
       <Route path="/bailemos" element={<Contacto/>} />
     </Routes>

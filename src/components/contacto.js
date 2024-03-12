@@ -1,5 +1,4 @@
 import React from 'react';
-import transition from '../transition';
 const Contacto = () => {
     return (  
         <main className='main-section'>
@@ -8,4 +7,4 @@ const Contacto = () => {
         );
 }
  
-export default transition(Contacto);
+export default Contacto;
