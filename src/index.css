@@ -248,3 +248,17 @@ box-shadow: 1px 3px 24px -13px rgba(66, 68, 90, 1);
   margin: auto;
   padding:64px 20px;
 }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.main-section {
+  padding-top:90px;
+}

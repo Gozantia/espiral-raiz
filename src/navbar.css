@@ -14,6 +14,7 @@ header {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     margin: 20px;
+    z-index: 10;
   }
   header .logo img {
     height: 75px;
@@ -97,6 +98,7 @@ header {
     opacity: 0;
     transition: 0.3s;
     right: 36.5%;
+    display:none;
 }
 .burger-menu .menu-options li {
     color: #fff;
@@ -124,4 +126,5 @@ header {
     opacity: 1;
     top: 104px;
     right: 36.5%;
+    display:block;
 }

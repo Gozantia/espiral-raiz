@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ObrasGrid from './obras-grid'
 const Home = () => {
     return ( <>
-        <main className='main-section home'>
+        <main className='home'>
            <div className="wrapper-video">
             <div className='overlay-bg'> layer </div>
             <div className='video-container'></div>
