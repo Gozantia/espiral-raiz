@@ -256,9 +256,36 @@ box-shadow: 1px 3px 24px -13px rgba(66, 68, 90, 1);
 
 .gallery img {
   width: 100%;
-  height: auto;
+  height: 164px;
+  cursor: pointer;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 5px;
+  box-shadow: 1px 3px 24px -13px rgba(66, 68, 90, 1);
+  transition: 0.7s;
+}
+.gallery img:hover {
+  box-shadow: 1px 3px 24px 1px rgb(91 168 44);
 }
 
 .main-section {
   padding-top:90px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.container-section {
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+@media (min-width:992px){
+  .container-section { 
+    flex-direction: row;
+  }
+  .container-section > article {
+    flex: 1.5;
+  }
+  .container-section > div {
+    flex: 1;
+  }
 }

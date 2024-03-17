@@ -3,10 +3,10 @@ import ImageModal from './Modal';
 
 const Gallery = ({ images }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
-  const openModal = (image) => {
-    setSelectedImage(image);
+  const openModal = (index) => {
+    setSelectedImageIndex(index);
     setModalIsOpen(true);
   };
 
@@ -20,13 +20,14 @@ const Gallery = ({ images }) => {
         <img
           key={index}
           src={image}
-          alt={``}
-          onClick={() => openModal(image)}
+          alt={` ${index}`}
+          onClick={() => openModal(index)}
         />
       ))}
       <ImageModal
         isOpen={modalIsOpen}
-        image={selectedImage}
+        images={images}
+        initialIndex={selectedImageIndex}
         onClose={closeModal}
       />
     </div>

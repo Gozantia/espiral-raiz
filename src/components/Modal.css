@@ -5,7 +5,7 @@
   overflow: auto;
   border-radius: 4px;
   outline: none;
-  padding: 20px;
+  padding: 0 !important;
   transform: translate(-50%, -50%);
 }
 
@@ -37,6 +37,21 @@
   @media (max-width: 992px){
 
     .ReactModal__Content.ReactModal__Content--after-open {
-      inset: 50% auto auto 50% !important;
+      inset: 50% -50% auto 50% !important;
     }
   }
+
+ .ReactModal__Content button h4 {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+.ReactModal__Content button {
+  background: #000;
+  border: none;
+  padding: 13px 10px;
+  bottom: 5px;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+}
