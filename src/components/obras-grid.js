@@ -4,7 +4,7 @@ const ObrasGrid = () => {
     return ( <>
     <section className='grid-container'>
     <h2>Explóranos</h2>
-    <container className='grid-obras'>
+    <div className='grid-obras'>
         <Link className='' to="/exploranos/entre-mezclas">
         <div className='item-grid-container'>
         <div className='item-grid entre-mezclas'>
@@ -36,7 +36,7 @@ const ObrasGrid = () => {
         <h3>Amoradanza </h3>
         </div>
         </Link>
-    </container>
+    </div>
     </section>
         </>
     )

@@ -50,8 +50,53 @@
   background: #000;
   border: none;
   padding: 13px 10px;
-  bottom: 5px;
+  bottom: 50%;
   right: 0;
   position: absolute;
   cursor: pointer;
+  width: 28px;
+}
+
+.ReactModal__Content button.close {
+  background: #000;
+  border: none;
+  padding: 13px 10px;
+  bottom: 5px;
+  left: 50%;
+
+}
+
+.ReactModal__Content .next {
+
+  bottom: 50%;
+  right: 0;
+}
+.ReactModal__Content .prev {
+  bottom: 50%;
+  left: 0;
+}
+.ReactModal__Content .prev::after {
+  content: "<";
+  font-size: 14px;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+
+}
+
+.ReactModal__Content .next::after {
+
+  content: ">";
+  font-size: 14px;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
 }
