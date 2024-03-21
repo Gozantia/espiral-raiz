@@ -1,9 +1,8 @@
 import React from "react";
 import Gallery from "../Gallery";
-import image1 from '../../galleries/gargola/gargola.jpg';
-import image2 from '../../galleries/gargola/gargola-santa-elena.jpg';
-import image3 from '../../galleries/gargola/gargola-comuna-13.jpg';
-import image4 from '../../galleries/gargola/gargola-oscura.JPG';
+import image1 from '../../galleries/memorias/memorias1.jpg';
+import image2 from '../../galleries/memorias/memorias2.jpg';
+import image3 from '../../galleries/memorias/memorias3.jpg';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import OtherWorks from "../OtherWorks";
 import 'react-tabs/style/react-tabs.css';
@@ -12,8 +11,7 @@ const MemoriasEnLienzo = () => {
 const images = [
 image1,
 image2,
-image3,
-image4
+image3
 ];
 
 

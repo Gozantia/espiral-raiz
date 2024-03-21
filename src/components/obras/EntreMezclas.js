@@ -1,9 +1,13 @@
 import React from "react";
 import Gallery from "../Gallery";
-import image1 from '../../galleries/gargola/gargola.jpg';
-import image2 from '../../galleries/gargola/gargola-santa-elena.jpg';
-import image3 from '../../galleries/gargola/gargola-comuna-13.jpg';
-import image4 from '../../galleries/gargola/gargola-oscura.JPG';
+import image1 from '../../galleries/entremezclas/entremezclas1.jpg';
+import image2 from '../../galleries/entremezclas/entremezclas2.jpg';
+import image3 from '../../galleries/entremezclas/entremezclas3.jpg';
+import image4 from '../../galleries/entremezclas/entremezclas4.jpg';
+import image5 from '../../galleries/entremezclas/entremezclas5.jpg';
+import image6 from '../../galleries/entremezclas/entremezclas6.jpg';
+import image7 from '../../galleries/entremezclas/entremezclas7.jpg';
+import image8 from '../../galleries/entremezclas/entremezclas8.jpg';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import OtherWorks from "../OtherWorks";
 import 'react-tabs/style/react-tabs.css';
@@ -13,7 +17,11 @@ const images = [
 image1,
 image2,
 image3,
-image4
+image4,
+image5,
+image6,
+image7,
+image8
 ];
 
 

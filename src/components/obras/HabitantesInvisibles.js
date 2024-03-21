@@ -1,16 +1,14 @@
 import React from "react";
 import Gallery from "../Gallery";
-import image1 from '../../galleries/gargola/gargola.jpg';
-import image2 from '../../galleries/gargola/gargola-santa-elena.jpg';
-import image3 from '../../galleries/gargola/gargola-comuna-13.jpg';
-import image4 from '../../galleries/gargola/gargola-oscura.JPG';
+import image2 from '../../galleries/habitantes/habitantes5.jpg';
+import image3 from '../../galleries/habitantes/habitantes2.jpg';
+import image4 from '../../galleries/habitantes/habitantes6.JPG';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import OtherWorks from "../OtherWorks";
 import 'react-tabs/style/react-tabs.css';
 
 const HabitantesInvisibles = () => {
 const images = [
-image1,
 image2,
 image3,
 image4

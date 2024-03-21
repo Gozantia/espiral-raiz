@@ -153,8 +153,15 @@ iframe.hero-video {
 }
 .grid-obras {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+
   gap: 20px;
+}
+@media (min-width:992px) {
+  .grid-obras {
+    grid-template-columns: repeat(5, 1fr);
+
+  }
+
 }
 .item-grid {
   min-height: 340px;
@@ -318,4 +325,10 @@ gap: 30px;
 
   height: 100%;
   object-fit: cover;
+}
+
+@media (max-width:768px) {
+  header .logo {
+    flex: 0.5;
+  }
 }

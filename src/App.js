@@ -11,6 +11,7 @@ import Gargola from './components/obras/gargola';
 import EntreMezclas from './components/obras/EntreMezclas';
 import HabitantesInvisibles from './components/obras/HabitantesInvisibles';
 import MemoriasEnLienzo from './components/obras/MemoriasEnLienzo';
+import Amoradanza from './components/obras/Amoradanza';
 function App() {
   const location = useLocation();
   return (
@@ -23,7 +24,7 @@ function App() {
       <Route path="/exploranos" element={<Portafolio/>} />
       <Route path='/obras/gargola' element={<Gargola/>}/>
       <Route path='/obras/entre-mezclas' element={<EntreMezclas />}/>
-      <Route path='/obras/amoradanza' element={<Gargola/>}/>
+      <Route path='/obras/amoradanza' element={<Amoradanza/>}/>
       <Route path='/obras/habitantes-invisibles' element={<HabitantesInvisibles/>}/>
       <Route path='/obras/memorias-lienzo' element={<MemoriasEnLienzo/>}/>
       <Route path="/aliemonos" element={<Servicios/>} />
