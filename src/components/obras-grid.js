@@ -5,32 +5,32 @@ const ObrasGrid = () => {
     <section className='grid-container'>
     <h2>Explóranos</h2>
     <div className='grid-obras'>
-        <Link className='' to="/exploranos/entre-mezclas">
+        <Link className='' to="/obras/entre-mezclas">
         <div className='item-grid-container'>
         <div className='item-grid entre-mezclas'>
         </div>
         <h3> Entre Mezclas </h3>
         </div>
         </Link>
-        <Link className='' to="/exploranos/memorias-lienzo">
+        <Link className='' to="/obras/memorias-lienzo">
         <div className='item-grid-container'>
         <div className='item-grid  memorias'></div>
         <h3>Memorias en lienzo </h3>
         </div>
         </Link>
-        <Link className='' to="/exploranos/habitantes-invisibles">
+        <Link className='' to="/obras/habitantes-invisibles">
         <div className='item-grid-container'>
         <div className='item-grid habitantes'> </div>
         <h3> Habitantes Invisibles </h3>
         </div>
         </Link>
-        <Link to="/exploranos/gargola">
+        <Link to="/obras/gargola">
         <div className='item-grid-container'>
         <div className='item-grid  gargola'></div>
         <h3> La Gárgola </h3>
         </div>
         </Link>
-        <Link to="/exploranos/amoradanza">
+        <Link to="/obras/amoradanza">
         <div className='item-grid-container'>
         <div className='item-grid amoradanza'> </div>
         <h3>Amoradanza </h3>
