@@ -1,7 +1,9 @@
 import React from 'react';
 import Frasesslide from './FrasesSlide';
 import { Link } from "react-router-dom";
-import ObrasGrid from './obras-grid'
+import ObrasGrid from './obras-grid';
+import Servicios from './servicios';
+import Acerca from './Acerca';
 const Home = () => {
     return ( <>
         <main className='home'>
@@ -17,6 +19,8 @@ const Home = () => {
               </Link>
                </div>     
                <ObrasGrid />
+                <Servicios />
+                <Acerca/>
               </main>
             
               </>

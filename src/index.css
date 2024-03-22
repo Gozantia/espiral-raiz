@@ -250,11 +250,12 @@ box-shadow: 1px 3px 24px -13px rgba(66, 68, 90, 1);
 }
 
 
-.grid-container {
+.grid-container, .servicios {
   max-width: 1300px;
   margin: auto;
   padding:64px 20px;
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -279,6 +280,7 @@ box-shadow: 1px 3px 24px -13px rgba(66, 68, 90, 1);
   padding:90px 20px;
   max-width: 1280px;
   margin: 0 auto;
+  display: grid;
 }
 .container-section {
 display: flex;
@@ -332,3 +334,17 @@ gap: 30px;
     flex: 0.5;
   }
 }
+.acerca img {
+  text-align: center;
+  margin: auto;
+}
+
+@media (min-width:768px){
+  .integrantes-info {
+    display: flex;
+    gap:20px;
+  }
+  .integrantes-info > div {
+    flex: 1;
+  }
+} 
