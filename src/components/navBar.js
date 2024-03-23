@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import logoEspiral from '../logo.png';
+import { HashLink } from 'react-router-hash-link';
 const NavBar = () => {
     return ( 
         <header>
@@ -23,25 +24,26 @@ const NavBar = () => {
     </label>
     <ul className="menu-options">
     <li className="nav-item">
-    <Link className="nav-link" to="/conocenos">
+    <HashLink smooth to="/#nosotros">
         Conócenos
-    </Link>
+ 
+    </HashLink>
+    
     </li>
     <li className="nav-item">
-    <Link className="nav-link" to="/exploranos">
+    <HashLink smooth to="/#portafolio">
         Explóranos
-    </Link>
+    </HashLink>
     </li>
     <li className="nav-item">
-    <Link className="nav-link" to="/aliemonos">
+    <HashLink className="nav-link" smooth to="/#servicios">
             Aliémonos
-    </Link>
+    </HashLink>
     </li>
 
     <li className="nav-item">
-    <Link className="nav-link" to="/bailemos">
-        Bailemos
-    </Link>
+    <HashLink className="nav-link" smooth to="/#contacto"> Bailemos
+    </HashLink>     
     </li>
 
     </ul>

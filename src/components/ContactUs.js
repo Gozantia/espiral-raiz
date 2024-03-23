@@ -30,7 +30,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <section className='main-section'>
+    <section className='main-section' id="contacto">
     <h2>Contáctanos</h2>
     
     <form ref={form} onSubmit={sendEmail} className='contacto'>

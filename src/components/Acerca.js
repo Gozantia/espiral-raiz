@@ -2,7 +2,7 @@ import React from 'react';
 import Integrantes from '../grid-images/acerca.jpg';
 const Acerca = () => {
     return (  
-        <div className='main-section acerca'>
+        <div className='main-section acerca' id="nosotros">
 <div className='video-text'>
                   <div className='video-container'>
                   <iframe className='videoembed' src="https://www.youtube.com/embed/BikWzGx79eU?rel=0" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="Espiral Raiz"></iframe>
