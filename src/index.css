@@ -277,7 +277,7 @@ box-shadow: 1px 3px 24px -13px rgba(66, 68, 90, 1);
 }
 
 .main-section {
-  padding:90px 20px;
+  padding:60px 20px;
   max-width: 1280px;
   margin: 0 auto;
   display: grid;
@@ -348,3 +348,8 @@ gap: 30px;
     flex: 1;
   }
 } 
+form.contacto {
+  display: grid;
+  justify-items: start;
+  gap: 5px;
+}

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import ObrasGrid from './obras-grid';
 import Servicios from './servicios';
 import Acerca from './Acerca';
+import ContactUs from './ContactUs';
 const Home = () => {
     return ( <>
         <main className='home'>
@@ -14,13 +15,11 @@ const Home = () => {
             </div> 
             <div className='hero-text'>
                  <Frasesslide />
-              <Link className="button button-primary" to="/exploranos">
-                  Explóranos
-              </Link>
                </div>     
                <ObrasGrid />
                 <Servicios />
                 <Acerca/>
+                <ContactUs />
               </main>
             
               </>
