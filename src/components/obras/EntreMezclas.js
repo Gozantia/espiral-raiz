@@ -28,6 +28,10 @@ image8
 return (  
 <main className='main-section'>
     <h1> Entre Mezclas</h1>
+    <div className='video-text'>
+    <div className='video-container'>
+                  <iframe className='videoembed' src="https://www.youtube.com/embed/7sdI5IsixY4?rel=0" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="Espiral Raiz"></iframe>
+    </div>
     <Tabs>
             <TabList>
             <Tab>Descripción</Tab>
@@ -102,6 +106,7 @@ Unidad para las víctimas Barrio Belencito comuna 13.<br />
 </ul>
             </TabPanel>
         </Tabs>
+  </div>
         <div>
         <OtherWorks />
         </div>

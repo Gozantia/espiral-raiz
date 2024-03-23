@@ -20,6 +20,11 @@ image4
 return (  
 <main className='main-section'>
     <h1>La Gárgola</h1>
+    <div className='video-text'>
+    <div className='video-container'>
+                  <iframe className='videoembed' src="https://www.youtube.com/embed/d9BRe1VhgFo?rel=0" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="Espiral Raiz"></iframe>
+    </div>
+
     <Tabs>
             <TabList>
             <Tab>Descripción</Tab>
@@ -93,6 +98,7 @@ Estímulo a la circulación local-creativa en la Red de espacios para la creaci�
 </ul>
             </TabPanel>
         </Tabs>
+ </div>
         <div>
         <OtherWorks />
         </div>

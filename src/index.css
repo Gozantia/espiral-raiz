@@ -21,7 +21,7 @@ h1 {
   font-size: 4rem;
   margin: 0;
 }
-.video-container{
+.herovideo-container{
   width: 100vw;
   height: 100vh;
 }
@@ -277,7 +277,7 @@ box-shadow: 1px 3px 24px -13px rgba(66, 68, 90, 1);
 }
 
 .main-section {
-  padding:60px 20px;
+  padding:90px 20px;
   max-width: 1280px;
   margin: 0 auto;
   display: grid;
@@ -337,6 +337,8 @@ gap: 30px;
 .acerca img {
   text-align: center;
   margin: auto;
+  max-width: 100%;
+  border-radius: 15px;
 }
 
 @media (min-width:768px){
@@ -352,4 +354,60 @@ form.contacto {
   display: grid;
   justify-items: start;
   gap: 5px;
+}
+
+form.contacto input[type="text"],
+form.contacto input[type="email"],
+form.contacto textarea {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form.contacto input[type="submit"] {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+  border-radius: 15px;
+}
+iframe.videoembed {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.video-text {
+  display: grid;
+  gap:20px;
+  padding: 20px 0;
+}
+
+@media (min-width: 992px) {
+  .video-text { 
+    grid-template-columns: 1fr 1fr;
+  }
 }

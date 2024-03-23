@@ -18,6 +18,10 @@ image3
 return (  
 <main className='main-section'>
     <h1>  Memorias en lienzo</h1>
+    <div className='video-text'>
+    <div className='video-container'>
+                  <iframe className='videoembed' src="https://www.youtube.com/embed/WXOWd49SXxY?rel=0" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="Espiral Raiz"></iframe>
+    </div>
     <Tabs>
             <TabList>
             <Tab>Descripción</Tab>
@@ -68,9 +72,10 @@ Participación en la Agenda  Cultural 2018 de la  convocatoria Estímulos para e
 
             </TabPanel>
         </Tabs>
-        <div>
+ </div>
+     <div>
         <OtherWorks />
-        </div>
+    </div>
 </main>
 );
 }

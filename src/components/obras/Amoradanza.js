@@ -28,6 +28,10 @@ image8
 return (  
 <main className='main-section'>
     <h1> Amoradanza</h1>
+    <div className='video-text'>
+    <div className='video-container'>
+                  <iframe className='videoembed' src="https://www.youtube.com/embed/tyfkmww-Cow?rel=0" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="Espiral Raiz"></iframe>
+    </div>
     <Tabs>
             <TabList>
             <Tab>Descripción</Tab>
@@ -54,11 +58,11 @@ return (
     <TabPanel>
         <div className="tab-content">
             <h3>Ficha técnica: </h3>
-            <strong>Título de la obra:</strong>  Memorias en lienzo <br />
-            <strong>Duraciòn de la obra:</strong> 30 minutos <br />
-            <strong>Género:</strong>  Danza contemporánea y urbana <br />
+            <strong>Título de la obra:</strong>  Amoradanza <br />
+            <strong>Duración de la obra:</strong> 14 minutos <br />
+            <strong>Género:</strong> video Danza contemporánea y urbana <br />
             <strong>Público:</strong> todo público <br />
-            <strong>Espacios para presentar la obra:</strong>  sala para teatro. <br />
+            <strong>Espacios para presentar la obra:</strong> Teatro. <br />
             <strong>Elementos escénicos:</strong> Vestuario, maleta  y  escenografía móvil de una puerta. <br />
             <strong>Raider técnico:</strong>Elipsoidal(es), Calles led, 6 Par de Leds RGBW de 3 Wt  outdoor, soporte para piso o estructura. <br />
             <strong>Creación y composición músical: </strong> Maicol Andres 
@@ -78,6 +82,7 @@ Participación en la Agenda  Cultural 2018 de la  convocatoria Estímulos para e
 
             </TabPanel>
         </Tabs>
+ </div>
         <div>
         <OtherWorks />
         </div>

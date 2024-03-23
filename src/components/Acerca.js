@@ -3,16 +3,20 @@ import Integrantes from '../grid-images/acerca.jpg';
 const Acerca = () => {
     return (  
         <div className='main-section acerca'>
-
-                  <img src={Integrantes} alt="Integrantes" />
+<div className='video-text'>
+                  <div className='video-container'>
+                  <iframe className='videoembed' src="https://www.youtube.com/embed/BikWzGx79eU?rel=0" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="Espiral Raiz"></iframe>
+                  </div>
             <p>
             Espiral Raíz es una producción escénica de danza experimental, dirigida por dos docentes/  creadores en danza desde el año 2012, su eje central es propiciar al desarrollo de la  producción escénica de representaciones artísticas, encuentros pedagógicos y culturales con  el compromiso cultural de sensibilizar con la danza hacia el desarrollo de propuestas  escénicas que fortalezcan la construcción de público activo, con el fin de disfruta de ver  representaciones de historias, mitos, momentos, sentimientos de la cotidianidad de la  personas. < br />< br />
 Nuestro formato artístico es un dúo de danza donde el performance escénico es elemento  creativo que enmarca la inquietud para representar la cotidianidad del ser humano y así  reflexionar sobre la diversidad, la identidad y la memoria cultural de nuestro territorio.  < br />< br />
 Incorporamos la danza etno contemporánea de diversos elementos como la danza tradicional colombiana, la  danza creativa con elementos teatrales y exploración de movimientos gestuales que  permiten elaborar un intercambio de saberes, dinámicas, estructuras de dramaturgia  complementando la creación coreográfica. 
 
             </p>
-                  
+            </div>
+            
             <h2> Integrantes</h2>
+            
             <div className='integrantes-info'>
             <div>
             <h3>Ernesto Alonso Peña López </h3>
@@ -26,6 +30,7 @@ Incorporamos la danza etno contemporánea de diversos elementos como la danza tr
             </p>
             </div>
             </div>
+            <img src={Integrantes} alt="Integrantes" width="580px" auto="auto"/>
         </div>
         );
 }
