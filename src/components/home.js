@@ -15,7 +15,7 @@ const Home = () => {
             <div className='hero-text'>
                  <Frasesslide />
                </div>     
-               <ObrasGrid />
+               <ObrasGrid/>
                 <Servicios />
                 <Acerca/>
                 <ContactUs />

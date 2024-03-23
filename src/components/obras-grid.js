@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 const ObrasGrid = () => {
     return ( <>
-    <section className='grid-container'>
+    <section className='grid-container' id="portafolio">
     <h2>Explóranos</h2>
     <div className='grid-obras'>
         <Link className='' to="/obras/entre-mezclas">
