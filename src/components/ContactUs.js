@@ -1,9 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 export const ContactUs = () => {
   const form = useRef();
-
+  const [ showSuccess, setShowSuccess ] = useState('hide');
+  const [ show, setShow ] = useState('hide');
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -11,6 +12,7 @@ export const ContactUs = () => {
 
   if (!user_name.value || !user_email.value || !message.value) {
     console.log('Por favor completa todos los campos');
+    setShow('show');
     return;
   }
       
@@ -21,6 +23,8 @@ export const ContactUs = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          setShow('hide');
+          setShowSuccess('show');
           e.target.reset();
         },
         (error) => {
@@ -42,6 +46,14 @@ export const ContactUs = () => {
       <textarea name="message" />
       <input type="submit" value="Enviar" />
     </form>
+    <div className={`msj-errorform ${show}`}>
+      <span> Por favor completa todos los campos </span>
+    </div>
+
+    <div className={`msj-success-form ${showSuccess}`}>
+      <span> Tu mensaje ha sido enviado, intentaremos responderte vía correo lo más pronto posible </span>
+    </div>
+
     </section>
   );
 };
