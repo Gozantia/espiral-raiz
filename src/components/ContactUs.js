@@ -22,7 +22,7 @@ export const ContactUs = () => {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+   
           setShow('hide');
           setShowSuccess('show');
           e.target.reset();
@@ -36,7 +36,11 @@ export const ContactUs = () => {
   return (
     <section className='main-section' id="contacto">
     <h2>Contáctanos</h2>
-    
+    <p>Si tienes alguna duda o consulta, no dudes en escribirnos.</p>
+    <p>Te responderemos lo más pronto posible.</p>
+    <p>Recuerda que puedes seguirnos en nuestras redes sociales.</p>
+    <p>¡Gracias por tu interés!</p>
+    <div className='form-container'>
     <form ref={form} onSubmit={sendEmail} className='contacto'>
       <label>Nombre</label>
       <input type="text" name="user_name" />
@@ -53,7 +57,7 @@ export const ContactUs = () => {
     <div className={`msj-success-form ${showSuccess}`}>
       <span> Tu mensaje ha sido enviado, intentaremos responderte vía correo lo más pronto posible </span>
     </div>
-
+    </div>  
     </section>
   );
 };

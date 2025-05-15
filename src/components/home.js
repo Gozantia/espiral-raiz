@@ -1,9 +1,10 @@
-import React from 'react';
+
 import Frasesslide from './FrasesSlide';
 import ObrasGrid from './obras-grid';
 import Servicios from './servicios';
 import Acerca from './Acerca';
 import ContactUs from './ContactUs';
+import Bullerengue from './bullerengue';
 const Home = () => {
     return ( <>
         <main className='home'>
@@ -14,7 +15,8 @@ const Home = () => {
             </div> 
             <div className='hero-text'>
                  <Frasesslide />
-               </div>     
+               </div>  
+              <Bullerengue />   
                <ObrasGrid/>
                 <Servicios />
                 <Acerca/>
