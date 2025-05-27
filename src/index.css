@@ -424,3 +424,15 @@ iframe.videoembed {
 .msj-success-form {
   color: #7dff7d;
 }
+
+.bullerengue-section .video-text {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 992px) {
+  .bullerengue-section .video-text {
+    grid-template-columns: 1fr 1fr;
+  }
+}
